@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>	
 <style>
+    #headcolor{   
+        background-color: yellow;
+    }
     p {
         color: blue;
     }
@@ -9,34 +12,32 @@
     }
 
     #list {
-        color: black;
-        float: left;
-        padding: 10px;
-
-    }
+        color: white;
+        float: none;
+         padding: 10px;
+      }
     #back {
-        background-color: chocolate;
+        background-color: teal;
     }
 </style>
 <head>
+<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
 <title> Welcome to my Project!!</title>
 <meta name="page description" content="This page is should hopefully show some technical skill.">.
 <meta name="author" content="Daniel Sutton">
+<h1 style="color: snow;">HELLO</h1>
 </head>
 <body id="back">
 	<h1>Example Header</h1>
-	<p>This <strong>would</strong> be a paragraph usualy but i have <strike>nothing</strike> <small>little</small> to say currently!</p>
-	<a href="https://edition.cnn.com/interactive/2019/06/us/dad-joke-generator-trnd/">Wanna make a <b>dad</b> joke?</a>
+	<p>This <strong>would</strong> be a paragraph usually but i have <strike>nothing</strike> <small>little</small> to say currently!</p>
 
-    <?php
-    echo 'This is your IP Address - '.$_SERVER['REMOTE_ADDR'];
-    ?>
-
+    <h2 style="color: white; text-decoration: underline;" >Sub Heading</h2>
+    <b style="color: yellow;">Please see list below for options!</b>
     <ul id="list">
-        <li>One</li>
-        <li>Two</li>
-        <li>Four</li>
+        <li><a href="https://edition.cnn.com/interactive/2019/06/us/dad-joke-generator-trnd/">Wanna make a <b>dad</b> joke?</a></li>
+        <li><button type="button" onclick="alert('This is where the IP Address will be!')">Press to see your IP</button></li>
+        <li><?php echo 'This your IP Address = '.$_SERVER['REMOTE_ADDR']; ?></li>
     </ul>
-
 </body>
 </html>
+<?php echo 'This your IP Address = '.$_SERVER['REMOTE_ADDR']; ?>
